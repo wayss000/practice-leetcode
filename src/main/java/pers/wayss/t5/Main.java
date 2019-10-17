@@ -12,7 +12,13 @@ import java.util.List;
  */
 public class Main {
     public static void main(String[] args) {
-        System.out.println("practice leetcode.");
+//        String s = "babad";
+//        String s = "cbba";
+//        String s = "abcda";
+        String s = "civilwartestingwhetherthatnaptionoranynartionsoconceivedandsodedicatedcanlongendureWeareqmetonagreatbattlefiemldoftzhatwarWehavecometodedicpateaportionofthatfieldasafinalrestingplaceforthosewhoheregavetheirlivesthatthatnationmightliveItisaltogetherfangandproperthatweshoulddothisButinalargersensewecannotdedicatewecannotconsecratewecannothallowthisgroundThebravelmenlivinganddeadwhostruggledherehaveconsecrateditfaraboveourpoorponwertoaddordetractTgheworldadswfilllittlenotlenorlongrememberwhatwesayherebutitcanneverforgetwhattheydidhereItisforusthelivingrathertobededicatedheretotheulnfinishedworkwhichtheywhofoughtherehavethusfarsonoblyadvancedItisratherforustobeherededicatedtothegreattdafskremainingbeforeusthatfromthesehonoreddeadwetakeincreaseddevotiontothatcauseforwhichtheygavethelastpfullmeasureofdevotionthatweherehighlyresolvethatthesedeadshallnothavediedinvainthatthisnationunsderGodshallhaveanewbirthoffreedomandthatgovernmentofthepeoplebythepeopleforthepeopleshallnotperishfromtheearth";
+        Solution solution = new Solution();
+        String result = solution.longestPalindrome(s);
+        System.out.println(result);
     }
 }
 
@@ -22,6 +28,7 @@ class Solution {
     }
 
     /**
+     * 算法是正确的，但是性能不满足：超出内存限制
      */
     String test1(String s) {
 
@@ -34,30 +41,60 @@ class Solution {
         List<StringBuilder> sbList = new ArrayList<>();
 
         char[] arr = s.toCharArray();
-        //遍历母字符串的所有字符
+        //遍历母字符串的所有字符，获取所有子串
         for (int i = 0; i < arr.length; i++) {
-            //将当前遍历的字符添加到之前的子字符串中
-            for (StringBuilder sb : sbList) {
-                sb.append(arr[i]);
+            StringBuilder sb = new StringBuilder();
+            sb.append(arr[i]);
+            sbList.add(sb);
+            if (i == arr.length - 1) {
+                break;
             }
-            //以当前字符串为第一个字符串，生成一个新的字符串
-            StringBuilder tempSB = new StringBuilder();
-            tempSB.append(arr[i]);
-            sbList.add(tempSB);
+            for (int j = i + 1; j < arr.length; j++) {
+                StringBuilder tempSB = new StringBuilder(sbList.get(sbList.size() - 1));
+                tempSB.append(arr[j]);
+                sbList.add(tempSB);
+            }
         }
 
-        checkPalindromicSubstring(sbList);
+        sbList = checkPalindromicSubstring(sbList);
 
-        return null;
+        //找出最长的回文串
+        StringBuilder result = null;
+        int maxLength = 0;
+        for (StringBuilder sb : sbList) {
+            if (sb.toString().length() > maxLength) {
+                maxLength = sb.toString().length();
+                result = sb;
+            }
+        }
+
+        return result == null ? "" : result.toString();
     }
 
     /**
-     * 找出所有回文串
+     * 找出入参字符串数组中所有回文串，将非回文串移除<br>
+     * 算法：对比子串第一个字符和最后一个字符是否相同，第二个和倒数第二个是否相等，依次类推
+     *
      * @param sbList
      */
-    void checkPalindromicSubstring(List<StringBuilder> sbList){
-        for (StringBuilder sb : sbList){
-
+    List<StringBuilder> checkPalindromicSubstring(List<StringBuilder> sbList) {
+        List<StringBuilder> palindromicList = new ArrayList<>();
+        for (StringBuilder sb : sbList) {
+            char[] strArr = sb.toString().toCharArray();
+            //times表示循环的次数
+            int times = strArr.length / 2;
+            //isPalinadromic表示回文数的标志
+            boolean isPalinadromic = true;
+            for (int i = 0; i < times; i++) {
+                if (strArr[i] != strArr[strArr.length - 1 - i]) {
+                    isPalinadromic = false;
+                    break;
+                }
+            }
+            if (isPalinadromic) {
+                palindromicList.add(sb);
+            }
         }
+        return palindromicList;
     }
 }
