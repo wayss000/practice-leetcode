@@ -5,7 +5,7 @@ package pers.wayss.t24;
  * @date 2019/10/17.
  */
 public class Main {
-    public static void main(String [] args){
+    public static void main(String[] args) {
         System.out.println("practice leetcode.");
     }
 }
@@ -18,7 +18,7 @@ class Solution {
         temp.next = head;
         ListNode prev = temp;
 
-        while (head != null && head.next != null){
+        while (head != null && head.next != null) {
             ListNode first = head;
             ListNode second = head.next;
 
@@ -30,5 +30,19 @@ class Solution {
             head = first.next;
         }
         return temp.next;
+    }
+
+    public ListNode swapPairs1(ListNode head) {
+        if (head == null || head.next == null) {
+            return head;
+        }
+
+        ListNode first = head;
+        ListNode second = head.next;
+
+        first.next = swapPairs1(second.next);
+        second.next = first;
+
+        return second;
     }
 }
