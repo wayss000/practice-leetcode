@@ -5,6 +5,9 @@ import java.util.Map;
 import java.util.Stack;
 
 /**
+ * 20. 有效的括号
+ * https://leetcode-cn.com/problems/valid-parentheses/
+ *
  * @author Wayss.
  * @date 2019/10/17.
  */

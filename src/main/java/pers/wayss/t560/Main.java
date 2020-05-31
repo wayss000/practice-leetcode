@@ -4,6 +4,9 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
+ * 560. 和为K的子数组
+ * https://leetcode-cn.com/problems/subarray-sum-equals-k/
+ *
  * @author Wayss.
  * @date 2019/10/17.
  */

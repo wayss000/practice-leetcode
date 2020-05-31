@@ -3,6 +3,9 @@ package pers.wayss.t394;
 import java.util.Stack;
 
 /**
+ * 394. 字符串解码
+ * https://leetcode-cn.com/problems/decode-string/
+ *
  * @author Wayss.
  * @date 2019/10/17.
  */

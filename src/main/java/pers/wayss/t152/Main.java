@@ -1,6 +1,9 @@
 package pers.wayss.t152;
 
 /**
+ * 152. 乘积最大子数组
+ * https://leetcode-cn.com/problems/maximum-product-subarray/
+ *
  * @author Wayss.
  * @date 2019/10/17.
  */

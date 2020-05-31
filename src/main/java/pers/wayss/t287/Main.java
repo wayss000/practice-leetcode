@@ -1,6 +1,9 @@
 package pers.wayss.t287;
 
 /**
+ * 287. 寻找重复数
+ * https://leetcode-cn.com/problems/find-the-duplicate-number/
+ *
  * @author Wayss.
  * @date 2019/10/17.
  */
