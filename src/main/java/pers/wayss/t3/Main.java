@@ -21,6 +21,32 @@ class Solution {
     }
 
     /**
+     * 双指针解法
+     * 时间复杂度O(n)
+     * 空间复杂度O(n)
+     * @return
+     */
+    private int test(String s){
+        int maxLength = 0;
+        if(s == null){
+            return maxLength;
+        }
+        Map<Character,Integer> mapIndex = new HashMap<>();
+        char[] array = s.toCharArray();
+        for(int start = 0,end = 0;end < array.length;end++){
+            //判断当前end所在元素是否在map中出现
+            //是：将start移到 end所在元素上一次出现之后，但要小心避免往回移（即，取较大的下标）
+            Integer temp = mapIndex.get(array[end]);
+            if(temp != null){
+                start = Math.max(start,temp+1);
+            }
+            maxLength = Math.max(maxLength, end-start+1);
+            mapIndex.put(array[end],end);
+        }
+        return maxLength;
+    }
+
+    /**
      * 正确
      * 执行用时 :159 ms, 在所有 java 提交中击败了12.60%的用户
      * 内存消耗 :50.8 MB, 在所有 java 提交中击败了23.79%的用户
