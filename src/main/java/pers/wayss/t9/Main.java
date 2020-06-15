@@ -1,6 +1,9 @@
 package pers.wayss.t9;
 
 /**
+ * 9. 回文数
+ * https://leetcode-cn.com/problems/palindrome-number/
+ *
  * @author Wayss.
  * @date 2019/10/17.
  */
