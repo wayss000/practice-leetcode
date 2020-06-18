@@ -7,6 +7,13 @@ package pers.wayss.t34;
 public class Main {
     public static void main(String[] args) {
         System.out.println("practice leetcode.");
+        int[] nums = {5,7,7,8,8,10};
+//        int target = 8;
+        int target = 6;
+        Solution solution = new Solution();
+        int [] result = solution.searchRange(nums, target);
+        System.out.println(result[0]);
+        System.out.println(result[1]);
     }
 }
 
@@ -19,16 +26,42 @@ class Solution {
     }
 
     private int searchLastRight(int[] nums, int target) {
+        int result = -1;
         int l = 0;
         int r = nums.length - 1;
         while (l <= r) {
             int mid = l + (r - l) / 2;
-
+            if (nums[mid] == target){
+                result = mid;
+                l = mid + 1;
+            }
+            if (nums[mid] < target){
+                l = mid + 1;
+            }
+            if (nums[mid] > target){
+                r = mid - 1;
+            }
         }
-        return -1;
+        return result;
     }
 
     private int searchFirstLeft(int[] nums, int target) {
-        return -1;
+        int result = -1;
+        int l = 0;
+        int r = nums.length - 1;
+        while (l <= r) {
+            int mid = l + (r - l) / 2;
+            if (nums[mid] == target) {
+                result = mid;
+                r = mid - 1;
+            }
+            if (nums[mid] < target) {
+                l = mid + 1;
+            }
+            if (nums[mid] > target) {
+                r = mid - 1;
+            }
+        }
+        return result;
     }
 }
