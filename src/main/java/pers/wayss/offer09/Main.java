@@ -23,13 +23,7 @@ class CQueue {
     }
 
     public void appendTail(int value) {
-        if (stack1.empty() && stack2.empty()) {
-            stack1.add(value);
-        } else if (!stack1.isEmpty()) {
-            stack1.add(value);
-        } else if (!stack2.isEmpty()) {
-            stack2.add(value);
-        }
+        stack1.add(value);
     }
 
     public int deleteHead() {
@@ -38,15 +32,14 @@ class CQueue {
             while (!stack1.isEmpty()) {
                 stack2.add(stack1.pop());
             }
-            return stack2.pop();
-        } else if (!stack2.isEmpty()) {
-            //栈2不为空，将栈2的元素全部移到栈1
-            while (!stack2.isEmpty()) {
+            int temp = stack2.pop();
+            while (!stack2.isEmpty()){
                 stack1.add(stack2.pop());
             }
-            return stack1.pop();
+            return temp;
+        }else {
+            return -1;
         }
-        return -1;
     }
 }
 
