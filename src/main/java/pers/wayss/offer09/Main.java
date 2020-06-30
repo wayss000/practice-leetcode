@@ -44,7 +44,7 @@ class CQueue {
             while (!stack2.isEmpty()) {
                 stack1.add(stack2.pop());
             }
-            return stack2.pop();
+            return stack1.pop();
         }
         return -1;
     }
