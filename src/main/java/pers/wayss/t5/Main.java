@@ -140,4 +140,27 @@ class Solution {
         }
         return palindromicList;
     }
+
+    // 2024-03-27 双指针法解决
+    public String doublePoint(String s) {
+        String result = "";
+        if (s == null) {
+            return result;
+        }
+        for (int i = 0; i < s.length(); i++) {
+            String s1 = resultPalindromic(s, i, i);
+            String s2 = resultPalindromic(s, i, i+1);
+            result = result.length() > s1.length() ? result : s1;
+            result = result.length() > s2.length() ? result : s2;
+        }
+        return result;
+    }
+
+    public String resultPalindromic(String s, int l, int r) {
+        while (l >= 0 && r < s.length() && s.charAt(l) == s.charAt(r)) {
+            l--;
+            r++;
+        }
+        return s.substring(l + 1, r);
+    }
 }
