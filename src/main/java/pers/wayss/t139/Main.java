@@ -1,13 +1,14 @@
 package pers.wayss.t139;
 
-import sun.java2d.pipe.SolidTextRenderer;
-
 import java.util.Arrays;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
 /**
+ * 139. 单词拆分
+ * https://leetcode.cn/problems/word-break/
+ *
  * @author Wayss.
  * @date 2019/10/17.
  */
