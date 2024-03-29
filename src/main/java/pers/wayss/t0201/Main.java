@@ -3,6 +3,8 @@ package pers.wayss.t0201;
 import java.util.HashMap;
 import java.util.Map;
 
+import pers.wayss.ListNode;
+
 /**
  * 面试题 02.01. 移除重复节点
  * https://leetcode-cn.com/problems/remove-duplicate-node-lcci/
@@ -38,14 +40,5 @@ class Solution {
             map.put(pre.val, true);
         }
         return head;
-    }
-}
-
-class ListNode {
-    int val;
-    ListNode next;
-
-    ListNode(int x) {
-        val = x;
     }
 }

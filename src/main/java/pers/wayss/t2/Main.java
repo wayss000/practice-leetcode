@@ -2,6 +2,8 @@ package pers.wayss.t2;
 
 import java.math.BigInteger;
 
+import pers.wayss.ListNode;
+
 /**
  * 2. 两数相加
  * <url>https://leetcode-cn.com/problems/add-two-numbers/</url>

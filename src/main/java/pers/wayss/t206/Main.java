@@ -1,5 +1,7 @@
 package pers.wayss.t206;
 
+import pers.wayss.ListNode;
+
 /**
  * 206. 反转链表
  * https://leetcode-cn.com/problems/reverse-linked-list/
