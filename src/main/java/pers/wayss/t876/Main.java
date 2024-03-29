@@ -1,4 +1,4 @@
-package t876;
+package pers.wayss.t876;
 
 import pers.wayss.ListNode;
 
