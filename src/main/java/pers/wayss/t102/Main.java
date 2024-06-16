@@ -1,5 +1,7 @@
 package pers.wayss.t102;
 
+import pers.wayss.common.TreeNode;
+
 import java.util.ArrayDeque;
 import java.util.ArrayList;
 import java.util.List;
@@ -21,7 +23,7 @@ public class Main {
 class Solution {
     public List<List<Integer>> levelOrder(TreeNode root) {
         if (root == null) {
-            return null;
+            return new ArrayList<>();
         }
 
         List<List<Integer>> result = new ArrayList<>();
@@ -47,15 +49,5 @@ class Solution {
         }
 
         return result;
-    }
-}
-
-class TreeNode {
-    int val;
-    TreeNode left;
-    TreeNode right;
-
-    TreeNode(int x) {
-        val = x;
     }
 }
