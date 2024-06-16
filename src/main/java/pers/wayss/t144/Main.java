@@ -6,14 +6,18 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
+ * 144.二叉树的前序遍历
+ * <url>https://leetcode.cn/problems/binary-tree-preorder-traversal/</url>
+ *
  * @author Wayss.
- * @date 2019/10/17.
  */
 public class Main {
     public static void main(String[] args) {
         System.out.println("practice leetcode.");
     }
+}
 
+class Solution {
     public List<Integer> preorderTraversal(TreeNode root) {
         List<Integer> res = new ArrayList<>();
         preorderTraversal(res, root);
@@ -27,4 +31,3 @@ public class Main {
         preorderTraversal(res, root.right);
     }
 }
-

@@ -6,6 +6,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
+ * 145. 二叉树的后序遍历
+ * <url>https://leetcode.cn/problems/binary-tree-postorder-traversal/description/</url>
+ *
  * @author Wayss.
  */
 public class Main {
@@ -13,6 +16,9 @@ public class Main {
         System.out.println("practice leetcode.");
     }
 
+}
+
+class Solution {
     public List<Integer> postorderTraversal(TreeNode root) {
         List<Integer> res = new ArrayList<>();
         postorderTraversal(res, root);
@@ -26,4 +32,3 @@ public class Main {
         res.add(root.val);
     }
 }
-

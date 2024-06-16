@@ -6,6 +6,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
+ * 94. 二叉树的中序遍历
+ * https://leetcode.cn/problems/binary-tree-inorder-traversal/description/
+ *
  * @author Wayss.
  */
 public class Main {
@@ -13,6 +16,9 @@ public class Main {
         System.out.println("practice leetcode.");
     }
 
+}
+
+class Solution {
     public List<Integer> inorderTraversal(TreeNode root) {
         List<Integer> res = new ArrayList<>();
         inorderTraversal(res, root);
@@ -28,4 +34,3 @@ public class Main {
         inorderTraversal(res, root.right);
     }
 }
-
