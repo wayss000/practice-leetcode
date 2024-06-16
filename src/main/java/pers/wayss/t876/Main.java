@@ -1,6 +1,6 @@
 package pers.wayss.t876;
 
-import pers.wayss.ListNode;
+import pers.wayss.common.ListNode;
 
 /**
  * 876. 链表的中间结点

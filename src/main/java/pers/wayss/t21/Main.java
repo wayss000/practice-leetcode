@@ -1,6 +1,6 @@
 package pers.wayss.t21;
 
-import pers.wayss.ListNode;
+import pers.wayss.common.ListNode;
 
 /**
  * 21. 合并两个有序链表

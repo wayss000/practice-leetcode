@@ -3,7 +3,7 @@ package pers.wayss.t0201;
 import java.util.HashMap;
 import java.util.Map;
 
-import pers.wayss.ListNode;
+import pers.wayss.common.ListNode;
 
 /**
  * 面试题 02.01. 移除重复节点

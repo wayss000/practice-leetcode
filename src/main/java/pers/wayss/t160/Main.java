@@ -1,6 +1,6 @@
 package pers.wayss.t160;
 
-import pers.wayss.ListNode;
+import pers.wayss.common.ListNode;
 
 /**
  * 160. 相交链表

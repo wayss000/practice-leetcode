@@ -1,6 +1,6 @@
 package pers.wayss.t86;
 
-import pers.wayss.ListNode;
+import pers.wayss.common.ListNode;
 
 /**
  * 86. 分隔链表

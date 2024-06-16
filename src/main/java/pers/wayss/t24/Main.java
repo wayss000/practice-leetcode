@@ -1,6 +1,6 @@
 package pers.wayss.t24;
 
-import pers.wayss.ListNode;
+import pers.wayss.common.ListNode;
 
 /**
  * 24. 两两交换链表中的节点

@@ -2,7 +2,7 @@ package pers.wayss.t2;
 
 import java.math.BigInteger;
 
-import pers.wayss.ListNode;
+import pers.wayss.common.ListNode;
 
 /**
  * 2. 两数相加

@@ -1,6 +1,6 @@
 package pers.wayss.t19;
 
-import pers.wayss.ListNode;
+import pers.wayss.common.ListNode;
 
 /**
  * 19. 删除链表的倒数第 N 个结点

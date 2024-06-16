@@ -1,6 +1,6 @@
 package pers.wayss.t142;
 
-import pers.wayss.ListNode;
+import pers.wayss.common.ListNode;
 
 /**
  * 142. 环形链表 II

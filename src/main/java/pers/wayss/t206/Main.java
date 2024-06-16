@@ -1,6 +1,6 @@
 package pers.wayss.t206;
 
-import pers.wayss.ListNode;
+import pers.wayss.common.ListNode;
 
 /**
  * 206. 反转链表
