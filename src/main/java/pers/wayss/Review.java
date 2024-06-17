@@ -14,9 +14,12 @@ import java.util.Random;
  */
 public class Review {
     public static void main(String[] args) {
+        int targetCount = 110;
         List<String> testPathLst = new ArrayList<>();
         File file = new File("./src/main/java/pers/wayss");
         File[] listFiles = file.listFiles();
+        int alreadyLearnCount = listFiles.length;
+        System.out.println("已经刷题" + alreadyLearnCount + "道，距离百题斩仅剩：" + (targetCount - alreadyLearnCount));
         for (File f : listFiles) {
             if (f.isDirectory()) {
                 testPathLst.add(f.getName());
