@@ -72,4 +72,40 @@ class Solution {
         }
         return result;
     }
+
+    /**
+     * 下面是ChatGPT给的.
+     * <p>
+     * 解释：
+     * 循环条件：while (i >= 0 || j >= 0 || carry != 0)，确保所有位都处理完并且最后的进位也处理完。
+     * 当前位处理：
+     * x 和 y 分别是 num1 和 num2 当前位的数字，如果当前位不存在则视为 0。
+     * sum 是当前位的和加上进位。
+     * sum % 10 得到当前位的结果，将其添加到 StringBuilder 中。
+     * sum / 10 计算新的进位。
+     * 指针移动：i-- 和 j-- 分别向前移动指针。
+     * 反转结果：由于 StringBuilder 中的结果是从低位到高位的，因此需要反转。
+     *
+     * @param num1
+     * @param num2
+     * @return
+     */
+    public String addStrings2(String num1, String num2) {
+        StringBuilder result = new StringBuilder();
+        int carry = 0;
+        int i = num1.length() - 1;
+        int j = num2.length() - 1;
+
+        while (i >= 0 || j >= 0 || carry != 0) {
+            int x = i >= 0 ? num1.charAt(i) - '0' : 0;
+            int y = j >= 0 ? num2.charAt(j) - '0' : 0;
+            int sum = x + y + carry;
+            result.append(sum % 10);
+            carry = sum / 10;
+            i--;
+            j--;
+        }
+
+        return result.reverse().toString();
+    }
 }
