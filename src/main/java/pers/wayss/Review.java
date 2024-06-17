@@ -2,8 +2,11 @@ package pers.wayss;
 
 import java.io.File;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.Random;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 /**
  * 随机复习一道题.
@@ -14,17 +17,18 @@ import java.util.Random;
  */
 public class Review {
     public static void main(String[] args) {
-        int targetCount = 110;
-        List<String> testPathLst = new ArrayList<>();
         File file = new File("./src/main/java/pers/wayss");
         File[] listFiles = file.listFiles();
-        int alreadyLearnCount = listFiles.length;
-        System.out.println("已经刷题" + alreadyLearnCount + "道，距离百题斩仅剩：" + (targetCount - alreadyLearnCount));
-        for (File f : listFiles) {
-            if (f.isDirectory()) {
-                testPathLst.add(f.getName());
-            }
-        }
+        List<File> list = Arrays.asList(listFiles);
+        List<String> testPathLst = list.stream()
+                .filter(File::isDirectory)
+                .map(File::getName)
+                .filter(name -> !name.contains("common"))
+                .collect(Collectors.toList());
+
+        int alreadyLearnCount = testPathLst.size();
+        System.out.println("已经刷题" + alreadyLearnCount + "道。");
+
         Random random = new Random();
         int index = random.nextInt(testPathLst.size());
         System.out.println(testPathLst.get(index));
