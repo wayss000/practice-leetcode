@@ -4,6 +4,9 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
+ * 146. LRU 缓存
+ * https://leetcode.cn/problems/lru-cache/description/
+ *
  * @author Wayss.
  */
 public class Main {
@@ -18,8 +21,14 @@ class LRUCache {
         int value;
         DLinkedNode prev;
         DLinkedNode next;
-        public DLinkedNode() {}
-        public DLinkedNode(int _key, int _value) {key = _key; value = _value;}
+
+        public DLinkedNode() {
+        }
+
+        public DLinkedNode(int _key, int _value) {
+            key = _key;
+            value = _value;
+        }
     }
 
     private Map<Integer, DLinkedNode> cache = new HashMap<Integer, DLinkedNode>();
@@ -64,8 +73,7 @@ class LRUCache {
                 cache.remove(tail.key);
                 --size;
             }
-        }
-        else {
+        } else {
             // 如果 key 存在，先通过哈希表定位，再修改 value，并移到头部
             node.value = value;
             moveToHead(node);
