@@ -1,5 +1,8 @@
 package pers.wayss.t1;
 
+import java.util.HashMap;
+import java.util.Map;
+
 /**
  * 1. 两数之和
  * <url>https://leetcode-cn.com/problems/two-sum/</url>
@@ -30,4 +33,18 @@ class Solution {
         }
         return result;
     }
+
+
+    public int[] twoSum1(int[] nums, int target) {
+        // hashtable的key位数组的值，value为数组的下标
+        Map<Integer, Integer> hashtable = new HashMap<Integer, Integer>();
+        for (int i = 0; i < nums.length; ++i) {
+            if (hashtable.containsKey(target - nums[i])) {
+                return new int[]{hashtable.get(target - nums[i]), i};
+            }
+            hashtable.put(nums[i], i);
+        }
+        return new int[0];
+    }
+
 }
