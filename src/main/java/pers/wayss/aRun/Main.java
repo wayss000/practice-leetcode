@@ -1,4 +1,4 @@
-package pers.wayss;
+package pers.wayss.aRun;
 
 /**
  * @author Wayss.

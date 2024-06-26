@@ -1,12 +1,10 @@
-package pers.wayss;
+package pers.wayss.aRun;
 
 import java.io.File;
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Random;
 import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
 /**
  * 随机复习一道题.
@@ -24,6 +22,7 @@ public class Review {
                 .filter(File::isDirectory)
                 .map(File::getName)
                 .filter(name -> !name.contains("common"))
+                .filter(name -> !name.contains("aRun"))
                 .collect(Collectors.toList());
 
         int alreadyLearnCount = testPathLst.size();
