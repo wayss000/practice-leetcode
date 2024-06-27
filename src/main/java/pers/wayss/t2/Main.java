@@ -26,6 +26,81 @@ public class Main {
  * }
  */
 class Solution {
+    // 链表遍历相加
+    public ListNode addTwoNumbers1(ListNode l1, ListNode l2) {
+        if (l1 == null) {
+            return l2;
+        }
+        if (l2 == null) {
+            return l1;
+        }
+        ListNode dump = new ListNode();
+        ListNode cur = dump;
+        int lastNum = 0;
+        while (l1 != null && l2 != null) {
+            // 取链表第一个数，相加
+            int val1 = l1.val;
+            int val2 = l2.val;
+            int sum = val1 + val2 + lastNum;
+            // 大于10需要进位，特殊处理
+            ListNode temp = new ListNode();
+            if (sum >= 10) {
+                temp.val = sum % 10;
+                lastNum = sum / 10;
+            } else {
+                temp.val = sum;
+                lastNum = 0;
+            }
+            cur.next = temp;
+            cur = temp;
+            // 指针后移
+            l1 = l1.next;
+            l2 = l2.next;
+        }
+        // l1 或 l2 哪个链表更长
+        while (l1 != null) {
+            int val = l1.val;
+            // 大于10需要进位，特殊处理
+            ListNode temp = new ListNode();
+            int sum = lastNum + val;
+            if (sum >= 10) {
+                temp.val = sum % 10;
+                lastNum = sum / 10;
+            } else {
+                temp.val = sum;
+                lastNum = 0;
+            }
+            cur.next = temp;
+            cur = temp;
+            // 指针后移
+            l1 = l1.next;
+        }
+        while (l2 != null) {
+            int val = l2.val;
+            // 大于10需要进位，特殊处理
+            ListNode temp = new ListNode();
+            int sum = lastNum + val;
+            if (sum >= 10) {
+                temp.val = sum % 10;
+                lastNum = sum / 10;
+            } else {
+                temp.val = sum;
+                lastNum = 0;
+            }
+            cur.next = temp;
+            cur = temp;
+            // 指针后移
+            l2 = l2.next;
+        }
+        if (lastNum > 0) {
+            ListNode temp = new ListNode();
+            temp.val = lastNum;
+            cur.next = temp;
+        }
+        return dump.next;
+    }
+
+    // 偷懒实现，两个链表遍历，后的数再反转，再调用大数相加api实现后，再生成新的链表
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
         if (l1 == null || l2 == null) {
             return null;
