@@ -6,6 +6,9 @@ import java.util.Stack;
  * 394. 字符串解码
  * https://leetcode-cn.com/problems/decode-string/
  *
+ * 数据结构：栈
+ * 算法：循环、栈的基础工具操作
+ *
  * @author Wayss.
  * @date 2019/10/17.
  */

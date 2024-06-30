@@ -6,6 +6,9 @@ import java.util.List;
  * 120. 三角形最小路径和
  * https://leetcode-cn.com/problems/triangle/
  *
+ * 数据结构：二维数组
+ * 算法：动态规划
+ *
  * @author Wayss.
  * @date 2019/10/17.
  */

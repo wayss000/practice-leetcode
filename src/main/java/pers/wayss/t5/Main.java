@@ -7,6 +7,9 @@ import java.util.List;
  * 5. 最长回文子串
  * <url>https://leetcode-cn.com/problems/longest-palindromic-substring/</url>
  *
+ * 数据结构：数组（需要将字符串转数组处理）
+ * 算法：双指针 动态规划
+ *
  * @author Wayss.
  * @date 2019/10/17.
  */
