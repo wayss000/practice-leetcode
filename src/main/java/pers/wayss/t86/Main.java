@@ -6,6 +6,9 @@ import pers.wayss.common.ListNode;
  * 86. 分隔链表
  * https://leetcode.cn/problems/partition-list/
  *
+ * 数据结构：链表
+ * 算法：双指针
+ *
  * @author Wayss.
  * @date 2019/10/17.
  */

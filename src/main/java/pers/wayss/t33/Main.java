@@ -4,6 +4,9 @@ package pers.wayss.t33;
  * 33. 搜索旋转排序数组
  * https://leetcode-cn.com/problems/search-in-rotated-sorted-array/
  *
+ * 数据结构：数组
+ * 算法：双指针，二分查找
+ *
  * @author Wayss.
  * @date 2019/10/17.
  */

@@ -6,6 +6,9 @@ import java.util.Arrays;
  * 88. 合并两个有序数组
  * https://leetcode.cn/problems/merge-sorted-array/description/
  *
+ * 数据结构：数组
+ * 算法：指针，逆向存储
+ *
  * @author Wayss.
  */
 public class Main {

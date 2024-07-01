@@ -7,6 +7,9 @@ import java.util.List;
  * 46. 全排列
  * https://leetcode.cn/problems/permutations/description/
  *
+ * 数据结构：数组
+ * 算法：回溯递归
+ *
  * @author Wayss.
  */
 public class Main {
@@ -22,6 +25,7 @@ class Solution {
         return result;
     }
 
+    // 时间复杂度：O(n*n!)，空间复杂度：O(n)
     public void backtrack(int[] nums, List<Integer> current, List<List<Integer>> result) {
         if (current.size() == nums.length) {
             result.add(new ArrayList<>(current));

@@ -4,6 +4,10 @@ package pers.wayss.t67;
  * 67. 二进制求和
  * https://leetcode-cn.com/problems/add-binary/
  *
+ * 数据结构：字符串数组
+ * 算法1：二进制相加
+ * 算法2：用Long型API
+ *
  *
  * @author Wayss.
  * @date 2019/10/17.

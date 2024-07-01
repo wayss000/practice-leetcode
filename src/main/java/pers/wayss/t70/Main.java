@@ -4,6 +4,9 @@ package pers.wayss.t70;
  * 70. 爬楼梯
  * https://leetcode-cn.com/problems/climbing-stairs/
  *
+ * 数据结构：数字
+ * 算法：动态规划
+ *
  * @author Wayss.
  * @date 2019/10/17.
  */

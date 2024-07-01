@@ -4,6 +4,9 @@ package pers.wayss.t53;
  * 53. 最大子序和
  * https://leetcode-cn.com/problems/maximum-subarray/
  *
+ * 数据结构：数组
+ * 算法：动态规划
+ *
  * @author Wayss.
  * @date 2019/10/17.
  */

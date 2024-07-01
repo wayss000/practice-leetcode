@@ -4,6 +4,9 @@ package pers.wayss.t50;
  * 50. Pow(x, n)
  * <url>https://leetcode-cn.com/problems/powx-n/</url>
  *
+ * 数据结构：纯数字
+ * 算法：递归、数学
+ *
  * @author Wayss.
  * @date 2019/10/17.
  */

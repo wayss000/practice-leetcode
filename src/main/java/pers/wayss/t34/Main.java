@@ -4,6 +4,9 @@ package pers.wayss.t34;
  * 34. 在排序数组中查找元素的第一个和最后一个位置
  * https://leetcode-cn.com/problems/find-first-and-last-position-of-element-in-sorted-array/
  *
+ * 数据结构：数组
+ * 算法：二分查找（分别查左、查右）
+ *
  * @author Wayss.
  * @date 2019/10/17.
  */

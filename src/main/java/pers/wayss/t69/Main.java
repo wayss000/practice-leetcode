@@ -4,6 +4,9 @@ package pers.wayss.t69;
  * 69.x的平方根
  * <url>https://leetcode-cn.com/problems/sqrtx/</url>
  *
+ * 数据结构：数字
+ * 算法：二分法：mid*mid 和 x 比较大小
+ *
  * @author Wayss.
  * @date 2019/10/17.
  */
