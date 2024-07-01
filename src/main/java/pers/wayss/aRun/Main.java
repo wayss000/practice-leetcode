@@ -1,6 +1,9 @@
 package pers.wayss.aRun;
 
 /**
+ * 数据结构：
+ * 算法：
+ *
  * @author Wayss.
  */
 public class Main {
