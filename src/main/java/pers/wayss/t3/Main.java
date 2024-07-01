@@ -9,6 +9,9 @@ import java.util.Map;
  * 3. 无重复字符的最长子串
  * https://leetcode-cn.com/problems/longest-substring-without-repeating-characters/
  *
+ * 数据结构：数组(字符转数组)、哈希表
+ * 算法：哈希map（key为数组val，value为数组index）
+ *
  * @author Wayss.
  * @date 2019/10/13.
  */

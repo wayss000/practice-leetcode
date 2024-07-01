@@ -4,6 +4,9 @@ package pers.wayss.t9;
  * 9. 回文数
  * https://leetcode-cn.com/problems/palindrome-number/
  *
+ * 数据结构：数字
+ * 算法：双指针思想（将每个位上的数，反转，判断是否等于原数）
+ *
  * @author Wayss.
  * @date 2019/10/17.
  */

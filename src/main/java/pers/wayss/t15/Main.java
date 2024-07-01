@@ -8,6 +8,9 @@ import java.util.List;
  * 15. 三数之和
  * https://leetcode.cn/problems/3sum/description/
  *
+ * 数据结构：数组
+ * 算法：三指针（2个指针再增，1个再减）
+ *
  * @author Wayss.
  */
 public class Main {

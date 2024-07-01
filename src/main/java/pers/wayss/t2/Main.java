@@ -8,6 +8,9 @@ import pers.wayss.common.ListNode;
  * 2. 两数相加
  * <url>https://leetcode-cn.com/problems/add-two-numbers/</url>
  *
+ * 数据结构：单链表
+ * 算法：链表遍历
+ *
  * @author Wayss.
  * @date 2019/10/17.
  */

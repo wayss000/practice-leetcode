@@ -4,6 +4,11 @@ package pers.wayss.t98;
  * 98. 验证二叉搜索树
  * https://leetcode-cn.com/problems/validate-binary-search-tree/
  *
+ * 数据结构：二叉搜索树（左子树都小于父，右子树都大于父）
+ * 算法1：递归实现，函数签名：isValid(TreeNode root, Integer min, Integer max);
+ * 算法2：中序遍历（也用到了递归）原理：二叉搜索树的中序遍历是一个递增的数组。
+ *
+ *
  * @author Wayss.
  * @date 2019/10/17.
  */

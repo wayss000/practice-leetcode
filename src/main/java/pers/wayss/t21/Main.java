@@ -6,6 +6,9 @@ import pers.wayss.common.ListNode;
  * 21. 合并两个有序链表
  * https://leetcode.cn/problems/merge-two-sorted-lists/
  *
+ * 数据结构：单链表
+ * 算法：while循环，对比大小
+ *
  * @author Wayss.
  * @date 2019/10/17.
  */

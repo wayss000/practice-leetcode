@@ -8,6 +8,9 @@ import java.util.Stack;
  * 20. 有效的括号
  * https://leetcode-cn.com/problems/valid-parentheses/
  *
+ * 数据结构：数组（字符串转数组）、栈
+ * 算法：出栈、入栈操作
+ *
  * @author Wayss.
  * @date 2019/10/17.
  */

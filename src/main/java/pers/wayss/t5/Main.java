@@ -8,7 +8,8 @@ import java.util.List;
  * <url>https://leetcode-cn.com/problems/longest-palindromic-substring/</url>
  *
  * 数据结构：数组（需要将字符串转数组处理）
- * 算法：双指针 动态规划
+ * 算法1：双指针，while循环，2个指针往两边扩大，记录符合最长的子串
+ * 算法2：动态规划，在子串长度大于3时，dp[i][j] = dp[i + 1][j - 1];
  *
  * @author Wayss.
  * @date 2019/10/17.

@@ -6,6 +6,9 @@ import pers.wayss.common.ListNode;
  * 19. 删除链表的倒数第 N 个结点
  * https://leetcode.cn/problems/remove-nth-node-from-end-of-list/
  *
+ * 数据结构：单链表
+ * 算法：双指针（fast指针先走N步）
+ *
  * @author Wayss.
  * @date 2019/10/17.
  */

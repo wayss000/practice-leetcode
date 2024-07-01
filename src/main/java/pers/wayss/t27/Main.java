@@ -4,6 +4,9 @@ package pers.wayss.t27;
  * 27. 移除元素
  * https://leetcode.cn/problems/remove-element/
  *
+ * 数据结构：数组
+ * 算法：双指针
+ *
  * @author Wayss.
  * @date 2019/10/17.
  */

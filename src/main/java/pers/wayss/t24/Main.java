@@ -6,6 +6,10 @@ import pers.wayss.common.ListNode;
  * 24. 两两交换链表中的节点
  * https://leetcode-cn.com/problems/swap-nodes-in-pairs/
  *
+ * 数据结构：单链表
+ * 算法1：递归
+ * 算法2：循环，两两交换
+ *
  * @author Wayss.
  * @date 2019/10/17.
  */

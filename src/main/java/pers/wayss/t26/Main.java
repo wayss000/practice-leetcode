@@ -4,6 +4,9 @@ package pers.wayss.t26;
  * 26. 删除有序数组中的重复项
  * https://leetcode.cn/problems/remove-duplicates-from-sorted-array/description/
  *
+ * 数据结构：数组
+ * 算法：双指针
+ *
  * @author Wayss.
  * @date 2019/10/17.
  */

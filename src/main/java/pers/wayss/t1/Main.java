@@ -7,6 +7,9 @@ import java.util.Map;
  * 1. 两数之和
  * <url>https://leetcode-cn.com/problems/two-sum/</url>
  *
+ * 数据结构：数组、哈希表
+ * 算法：for循环（用哈希表空间复杂度解决2层for循环的时间复杂度）
+ *
  * @author Wayss.
  * @date 2019/10/17.
  */
