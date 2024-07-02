@@ -9,7 +9,7 @@ import pers.wayss.common.ListNode;
  * <url>https://leetcode-cn.com/problems/add-two-numbers/</url>
  *
  * 数据结构：单链表
- * 算法：链表遍历
+ * 算法：链表遍历，注意相加进位的情况即可
  *
  * @author Wayss.
  * @date 2019/10/17.
