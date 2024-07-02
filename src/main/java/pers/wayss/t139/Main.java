@@ -38,6 +38,9 @@ class Solution {
                 }
             }
         }
+        for (boolean b : dp) {
+            System.out.print(b + ",");
+        }
         return dp[s.length()];
     }
 }
