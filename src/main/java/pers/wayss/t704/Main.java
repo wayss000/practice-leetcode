@@ -30,10 +30,10 @@ class Solution {
                 return mid;
             }
             if (nums[mid] > target) {
-                right--;
+                right = mid - 1;
             }
             if (nums[mid] < target) {
-                left++;
+                left = mid + 1;
             }
         }
         return -1;
