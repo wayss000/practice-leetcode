@@ -9,7 +9,7 @@ import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 /**
- * PDD一面编程题：
+ * XXX N面编程题：
  * 给定初始整型列表list和线程数量n，要求:
  * - 使用n个线程按list顺序交替输出list中的值;
  * - list输出完成后，再分别输出每个线程各自输出过的列表;
