@@ -49,4 +49,21 @@ class Solution {
             }
         }
     }
+
+    // 递归的另一种写法
+    public int maxDepth_1(TreeNode root) {
+        int maxDepth = 0;
+        if (root == null) {
+            return maxDepth;
+        }
+        return maxDepth_1(root, maxDepth);
+    }
+
+    public int maxDepth_1(TreeNode root, int maxDepth) {
+        if (root == null) {
+            return maxDepth;
+        }
+        maxDepth++;
+        return Math.max(maxDepth_1(root.left, maxDepth), maxDepth_1(root.right, maxDepth));
+    }
 }
