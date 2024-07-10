@@ -64,4 +64,13 @@ class Solution {
         // left should be at the unique number
         return nums[left];
     }
+
+    // 采用二进制异或，原题 leetcode 136，时间复杂度O(n)
+    public int func3(int[] nums) {
+        int result = 0;
+        for (int n : nums) {
+            result = result ^ n;
+        }
+        return result;
+    }
 }
