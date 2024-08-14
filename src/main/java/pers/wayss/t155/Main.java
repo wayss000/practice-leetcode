@@ -6,6 +6,8 @@ import java.util.Stack;
  * 155. 最小栈
  * <url>https://leetcode-cn.com/problems/min-stack/</url>
  *
+ * 数据结构：栈
+ *
  * @author Wayss.
  * @date 2019/10/17.
  */

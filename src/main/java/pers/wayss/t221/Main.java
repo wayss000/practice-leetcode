@@ -4,6 +4,9 @@ package pers.wayss.t221;
  * 221. 最大正方形
  * <url>https://leetcode-cn.com/problems/maximal-square/</url>
  *
+ * 数据结构：数据
+ * 算法：动态规划
+ *
  * @author Wayss.
  * @date 2019/10/17.
  */
