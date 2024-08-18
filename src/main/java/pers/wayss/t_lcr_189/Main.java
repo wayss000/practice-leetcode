@@ -1,7 +1,8 @@
-package pers.wayss.t64;
+package pers.wayss.t_lcr_189;
 
 /**
- * 64. 求1+2+…+n
+ * LCR 189. 设计机械累加器
+// * 64. 求1+2+…+n
  * https://leetcode-cn.com/problems/qiu-12n-lcof/
  *
  * 数据结构：数字

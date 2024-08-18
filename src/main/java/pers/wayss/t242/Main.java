@@ -7,6 +7,9 @@ import java.util.Map;
  * 242. 有效的字母异位词
  * https://leetcode-cn.com/problems/valid-anagram/
  *
+ * 数据结构：字符串、字符数组
+ * 算法：哈希表
+ *
  * @author Wayss.
  * @date 2019/10/17.
  */

@@ -1,11 +1,15 @@
 package pers.wayss.t1431;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
 /**
  * 1431. 拥有最多糖果的孩子
  * https://leetcode-cn.com/problems/kids-with-the-greatest-number-of-candies/
+ *
+ * 数据结构：数组
+ * 算法：无（数据基本操作）
  *
  * @author Wayss.
  * @date 2019/10/17.

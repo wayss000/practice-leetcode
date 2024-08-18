@@ -6,8 +6,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * 数据结构：
- * 算法：
+ * 23. 合并 K 个升序链表
+ * https://leetcode.cn/problems/merge-k-sorted-lists/description/
+ *
+ * 数据结构：链表
+ * 算法：多个链表复杂操作
  *
  * @author Wayss.
  */
