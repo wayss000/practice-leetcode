@@ -27,6 +27,7 @@ class Solution {
         int max = 0;
         for (int num : nums) {
             // !set.contains(num - 1) 判断，能够去除重复的判断
+            // （若num-1存在，表示当前 数 不是序列的第一个，较小的数肯定都会走下面的遍历，因此该判断可减少重复）。
             if (!set.contains(num - 1)) {
                 int curNum = num;
                 int curMax = 0;
