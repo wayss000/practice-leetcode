@@ -22,6 +22,7 @@ public class Main {
 //1 2 3 4 null
 //2 1 4 3 null
 class Solution {
+    // 循环实现
     public ListNode swapPairs(ListNode head) {
         ListNode temp = new ListNode(-1);
         temp.next = head;
@@ -41,6 +42,7 @@ class Solution {
         return temp.next;
     }
 
+    // 递归实现
     public ListNode swapPairs1(ListNode head) {
         if (head == null || head.next == null) {
             return head;

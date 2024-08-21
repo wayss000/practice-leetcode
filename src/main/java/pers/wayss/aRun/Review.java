@@ -29,6 +29,17 @@ public class Review {
         System.out.println("已经刷题" + alreadyLearnCount + "道。");
 
         Random random = new Random();
+        boolean printTen = true;
+        if (printTen) {
+            for (int i = 0; i < 10; i++) {
+                printCodeName(random, testPathLst);
+            }
+        } else {
+            printCodeName(random, testPathLst);
+        }
+    }
+
+    private static void printCodeName(Random random, List<String> testPathLst) {
         int index = random.nextInt(testPathLst.size());
         System.out.println(testPathLst.get(index));
     }
