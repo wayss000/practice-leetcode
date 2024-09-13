@@ -9,6 +9,7 @@ import java.util.stream.Collectors;
 /**
  * 随机复习一道题.
  * 程序输出哪道就复习哪一道.
+ * Top50：https://leetcode.cn/studyplan/top-interview-150/
  *
  * @author Wayss.
  * @date 2020/6/19.
