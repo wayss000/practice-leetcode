@@ -3,7 +3,7 @@ package pers.wayss.t25;
 import pers.wayss.common.ListNode;
 
 /**
- * 25. K 个一组翻转链表
+ * 25. K个一组翻转链表
  * https://leetcode.cn/problems/reverse-nodes-in-k-group/description/
  *
  * 数据结构：单链表
