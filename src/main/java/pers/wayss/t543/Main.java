@@ -3,7 +3,10 @@ package pers.wayss.t543;
 import pers.wayss.common.TreeNode;
 
 /**
- * 数据结构：
+ * 543. 二叉树的直径
+ * https://leetcode.cn/problems/diameter-of-binary-tree/description/
+ *
+ * 数据结构：二叉树
  * 算法：
  *
  * @author Wayss.
