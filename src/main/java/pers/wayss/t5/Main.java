@@ -152,8 +152,11 @@ class Solution {
             return result;
         }
         for (int i = 0; i < s.length(); i++) {
+            // 以 s[i] 为中心的最长回文子串
             String s1 = resultPalindromic(s, i, i);
+            // 以 s[i] 和 s[i+1] 为中心的最长回文子串
             String s2 = resultPalindromic(s, i, i+1);
+            // res = longest(res, s1, s2)
             result = result.length() > s1.length() ? result : s1;
             result = result.length() > s2.length() ? result : s2;
         }
