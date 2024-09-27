@@ -41,4 +41,22 @@ class Solution {
         traverse(root.left);
         traverse(root.right);
     }
+
+    // 方法二
+    // 定义：将以 root 为根的这棵二叉树翻转，返回翻转后的二叉树的根节点
+    public TreeNode invertTree1(TreeNode root) {
+        if (root == null) {
+            return null;
+        }
+        // 利用函数定义，先翻转左右子树
+        TreeNode left = invertTree1(root.left);
+        TreeNode right = invertTree1(root.right);
+
+        // 然后交换左右子节点
+        root.left = right;
+        root.right = left;
+
+        // 和定义逻辑自恰：以 root 为根的这棵二叉树已经被翻转，返回 root
+        return root;
+    }
 }
