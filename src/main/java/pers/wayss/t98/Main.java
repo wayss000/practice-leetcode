@@ -76,7 +76,7 @@ class Solution {
         }
 
         //比较大小
-        if (prevVal > root.val) {
+        if (prevVal != null && prevVal >= root.val) {
             return false;
         } else {
             //中序遍历保存当前元素
