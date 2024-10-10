@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * 笔试题目
+ * 高德笔试题目
  * 输入：int[] 数组
  * 若：相邻的3个sum > 100,且 连续的4组或4组以上sum>100（3个相邻数之和为一组），那么输出当前的全部
  * 输入
